@@ -80,8 +80,13 @@
         .section-content {
             margin-bottom: 30px;
         }
+        .image-container {
+            display: flex;
+            justify-content: space-around; /* Espaçamento igual entre as imagens */
+            flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha se o espaço for insuficiente */
+        }
         .custom-image {
-            width: 300px; /* Altere o tamanho conforme necessário */
+            width: 500px; /* Altere o tamanho conforme necessário */
             height: auto; /* Mantém a proporção da imagem */
             border-radius: 10px; /* Cantos arredondados */
             border: 2px solid #ccc; /* Borda sutil */
@@ -168,9 +173,11 @@
     <section id="carrossel">
         <h2>Conheça o NAF em Imagens</h2>
         <div class="carrossel">
+        <div class="image-container">
             <img src="https://i.ibb.co/b5wN8Rh/12b2a135-49db-4a14-bbb0-f29c18ac168b.jpg" alt="Imagem" class="custom-image">
             <img src="https://i.ibb.co/fq4DYqR/c6eaa29e-e2d8-46c2-af7b-a410a6025a1d.jpg" alt="Imagem" class="custom-image">
             <img src="https://i.ibb.co/Hxb4VKt/c479cc2d-8062-4df7-87f7-79644d416cde.jpg" alt="Imagem" class="custom-image">
+        </div>
         </div>
     </section>
 
